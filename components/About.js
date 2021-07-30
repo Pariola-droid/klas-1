@@ -52,7 +52,7 @@ export default function About() {
 
 
             <div className="flex h-96 w-0 h-0 md:h-auto w-full md:w-1/2 justify-center items-center">
-                <img src="/how-work.png" alt="app" className=" h-full w-4/6 object-contain"/>
+                <img src="/how-work.png" alt="how" className=" h-full w-4/6 object-contain"/>
             </div>
 
         </div>

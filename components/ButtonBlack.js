@@ -3,9 +3,9 @@ import {StyleSheet, Text, TouchableOpacity} from "react-native";
 
 
 
-function ButtonBlack({title}) {
+function ButtonBlack({title, onPress}) {
     return (
-        <TouchableOpacity
+        <TouchableOpacity onPress={onPress}
             style={styles.registerContainer}
         >
             <Text style={styles.registerText}>{title}</Text>

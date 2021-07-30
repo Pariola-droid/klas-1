@@ -1,7 +1,15 @@
+import {useRouter} from "next/router";
 import ButtonBlack from '../components/ButtonBlack';
 
 
 export default function Download() {
+
+    const router =useRouter();
+
+    const onPress = () => {
+        router.push(`https://web.elpisacademy.us/`)
+    };
+
     return (
         <div className="flex flex-col w-full justify-center items-center md:py-20 px-5">
                 <div className="">
@@ -35,7 +43,7 @@ export default function Download() {
                 <div className="mt-5 lg:mt-10 mb-20 flex justify-evenly items-center">
                     <p className="text-base text-center md:text-2xl font-semibold">Start monetizing your knowledge with Klas.</p>
                     <div className="px-5">
-                        <ButtonBlack title="GET STARTED" />
+                        <ButtonBlack title="GET STARTED" onPress={onPress}/>
                     </div>
                 </div>
             </div>

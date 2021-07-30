@@ -11,7 +11,7 @@ function Welcome() {
     const router =useRouter();
 
     const onPress = () => {
-        router.push(`/waitlist`)
+        router.push(`https://web.elpisacademy.us/`)
     };
 
 
