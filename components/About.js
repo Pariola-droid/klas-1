@@ -51,8 +51,8 @@ export default function About() {
             </div>
 
 
-            <div className="flex h-96 w-0 h-0 md:h-auto md:py-10 w-full md:w-1/2 justify-center items-center">
-                <img src="/f3.png" alt="app" className=" h-full w-4/6 object-contain"/>
+            <div className="flex h-96 w-0 h-0 md:h-auto w-full md:w-1/2 justify-center items-center">
+                <img src="/how-work.png" alt="app" className=" h-full w-4/6 object-contain"/>
             </div>
 
         </div>
