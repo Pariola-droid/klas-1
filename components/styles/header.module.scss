@@ -1,0 +1,103 @@
+@import "../../styles/variables";
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding-left: 145px;
+    display: grid;
+    place-items: center;
+    padding-right: 34px;
+    padding-top: 10px;
+    z-index: 99;
+    background-color: #fff;
+
+    & .wrapper {
+        width: 100%;
+        border-radius: 30px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // background-color: #52525A;
+
+        & .search {   
+            position: relative;
+            display: grid;
+            place-items: center;         
+
+            & svg {
+                position: absolute;
+                left: 16px;
+            }
+
+            & input {
+                height: 60px;
+                width: 446px;
+                background: rgba(229, 229, 229, 0.3);
+                border-radius: 50px;
+                padding: 1rem;
+                padding-left: 58px;
+                outline: none;
+                border: 0;
+                font-weight: 600;
+                color: #52525A;
+
+                &::placeholder {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14.4px;                   
+                    text-transform: capitalize;
+                }
+                
+            }
+        }
+
+        & .account {
+            display: flex;
+            align-items: center;            
+
+            & svg {
+                margin-right: 1.5rem;
+            }
+
+            & .user {
+                display: flex;
+                align-items: center;
+
+                & .name_email {
+                    margin-right: 1em;
+                    text-align: right;
+
+                    h1 {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 17.28px;
+                        line-height: 10px;
+                        color: #52525A;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 10px;
+                        color: #BDBDCA;
+                        font-size: 13px;
+                    }
+                }
+
+                & img {
+                    height: 55px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        
+    }
+}
+
+

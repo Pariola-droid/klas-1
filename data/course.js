@@ -1,0 +1,86 @@
+export default[
+    {
+        id: 1,
+        title: "Product Design",
+        createdAt: "22/06/2021",
+        bookings: "125",
+    },
+    {
+        id: 2,
+        title: "Web Design",
+        createdAt: "24/06/2021",
+        bookings: "223",
+    },
+    {
+        id: 3,
+        title: "UX Design",
+        createdAt: "24/06/2021",
+        bookings: "33",
+    },
+    {
+        id: 4,
+        title: "UI Design",
+        createdAt: "24/06/2021",
+        bookings: "22",
+    },
+    {
+        id: 5,
+        title: "Mobile Design",
+        createdAt: "24/06/2021",
+        bookings: "55",
+    },
+    {
+        id: 6,
+        title: "Web Design",
+        createdAt: "24/06/2021",
+        bookings: "223",
+    },
+    {
+        id: 7,
+        title: "UX Design",
+        createdAt: "24/06/2021",
+        bookings: "33",
+    },
+    {
+        id: 8,
+        title: "UI Design",
+        createdAt: "24/06/2021",
+        bookings: "22",
+    },
+    {
+        id: 9,
+        title: "Mobile Design",
+        createdAt: "24/06/2021",
+        bookings: "55",
+    },
+    {
+        id: 7,
+        title: "UX Design",
+        createdAt: "24/06/2021",
+        bookings: "33",
+    },
+    {
+        id: 8,
+        title: "UI Design",
+        createdAt: "24/06/2021",
+        bookings: "22",
+    },
+    {
+        id: 9,
+        title: "Mobile Design",
+        createdAt: "24/06/2021",
+        bookings: "55",
+    },
+    {
+        id: 7,
+        title: "UX Design",
+        createdAt: "24/06/2021",
+        bookings: "33",
+    },
+    {
+        id: 8,
+        title: "UI Design",
+        createdAt: "24/06/2021",
+        bookings: "22",
+    },
+];

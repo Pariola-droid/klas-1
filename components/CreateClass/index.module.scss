@@ -1,0 +1,175 @@
+@import "../../styles/variables";
+
+.wrapper {
+    width: 100%;
+    max-height: fit-content;    
+    // background-color: red; 
+    display: flex;
+    justify-content: space-between;
+    
+    & .calendly {
+        width: 750px;
+        height: fit-content;
+        transform: scale(.98);
+        border-radius: 30px;
+        background: rgba(229, 229, 229, 0.3);  
+    }
+
+    & .create {
+        width: 400px;
+        max-height: 1200px;
+        background: rgba(229, 229, 229, 0.3);
+        border-radius: 30px;
+        transform: scale(.98);
+        padding: 1.5rem 1.5rem;
+
+        & .cNav {  
+            margin-bottom: 1.8rem; 
+            padding-left: 1.7rem;
+           
+            & h3 {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                font-weight: 500;
+                color: #808080;
+                font-size: 15px;
+            }
+        }
+
+        & .form {
+
+            & .fStyle {
+                display: block;
+                width: 100%;
+                margin-bottom: 1.4rem;
+                border-width: 0;
+                outline: 0;
+                resize: none;
+                color: #000;
+                padding: 1rem 1.8rem;
+                border-radius: 10px;
+                box-shadow: 0px 4px 4px rgba(82, 82, 90, 0.1);
+                background: #FFFFFF;
+                
+                &::placeholder {
+                    text-transform: capitalize;
+                    color: #C4C4C4;
+                    font-size: 13px;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+
+            & input {
+                height: 50px;               
+            }
+
+            & textarea {
+                height: 158px;
+                                
+            }
+
+            & .cost {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & input {
+
+                    &:nth-child(1) {
+                        width: 70%;
+                    }
+                }
+
+                & select {
+                     width: 25%;
+                     transition: .3s;
+                     padding: 1rem .8rem;
+                     font-weight: bold;
+                     font-size: 1em;
+                     cursor: pointer;
+
+                     & option {
+                         box-shadow: none;
+                         font-size: 15px; 
+                         padding: 1rem !important;
+                     }
+                }
+            }
+
+            & .coverImg {
+                height: 100px;
+                width: 100%;
+                position: relative;  
+                background-color: #fff;        
+                display: grid;
+                place-items: center;  
+                margin-bottom: 2rem;  
+                border-radius: 10px; 
+
+                & span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    color: #c4c4c4;
+                    font-size: 14px;
+
+                    & svg {
+                        margin-right: 1rem;
+                    }
+                }
+
+                & input {
+                    height: 100%;                    
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    cursor: pointer;
+                    color: transparent;
+                    background-color: transparent;
+
+                    &::-webkit-file-upload-button {
+                        display: none;
+                    }
+                }
+            }
+
+            & .submit {
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+
+                & span {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    color: #000;
+
+                    & input {
+                        margin-right: .5em;
+                        cursor: pointer;
+                    }
+                }
+
+                .ss {
+                    width: 124px;
+                    height: 40px;
+                    background: #000000;
+                    border-radius: 10px;
+                    outline: 0;
+                    border-width: 0;
+                    color: #fff;
+                    font-size: 13px;
+                    font-family: 'Poppins', sans-serif;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
