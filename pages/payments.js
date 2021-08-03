@@ -17,7 +17,7 @@ const Payments = () => {
     return (
     <div className="h-screen w-screen flex flex-row">
                             
-        <Sidebar b1={"#808080"} b2={"#808080"} b3={"#808080"} b4={"#fff"}/>
+        <Sidebar b1={"#808080"} b2={"#808080"} b3={"#fff"} b4={"#808080"}/>
 
         <div className="flex flex-col pr-10 pl-3 w-full">
             
