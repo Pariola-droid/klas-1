@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 import Header from "../components/Dashboard/header";
 import Sidebar from "../components/Dashboard/sidebar";
