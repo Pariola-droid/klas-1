@@ -16,6 +16,12 @@ const CreateClass = () => {
 
     return (
     <div className="h-screen w-screen flex flex-row">
+
+        <Head>
+          <title>Klas - Create class </title>
+          <meta name="Klas" content="Klas is your online content management, Share and moneytize your knowledge." />
+          <link rel="icon" href="/klas.svg" />
+        </Head>
                             
         <Sidebar b1={"white"} b2={"#808080"} b3={"#808080"} b4={"#808080"}/>
 

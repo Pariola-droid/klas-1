@@ -18,6 +18,12 @@ const Classes = () => {
    
     return (
     <div className="h-screen w-screen flex flex-row">
+
+        <Head>
+          <title>Klas - Class bookings </title>
+          <meta name="Klas" content="Klas is your online content management, Share and moneytize your knowledge." />
+          <link rel="icon" href="/klas.svg" />
+        </Head>
                             
         <Sidebar b1={"#808080"} b2={"white"} b3={"#808080"} b4={"#808080"}/>
 
