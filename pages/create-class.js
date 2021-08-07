@@ -1,15 +1,40 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Link from "next/link";
 import Head from 'next/head';
 
 import Header from "../components/Dashboard/header";
 import Sidebar from "../components/Dashboard/sidebar";
 
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+import { DateRangePicker } from 'react-date-range';
+import { addDays } from 'date-fns';
 
 
 const CreateClass = () => {
 
     const [recurring, setRecurring] = useState(false);
+
+    // const [date, setDate] = useState({
+    //     selection: {
+    //       startDate: new Date(),
+    //       endDate: null,
+    //       key: 'selection'
+    //     },
+    //     compare: {
+    //       startDate: new Date(),
+    //       endDate: addDays(new Date(), 3),
+    //       key: 'compare'
+    //     }
+    // });
+
+    const [selectedDate, setSelectedDate] = useState({
+        selection: {
+          startDate: addDays(new Date(), 1),
+          endDate: addDays(new Date(), 2),
+          key: 'selection'
+        }
+      });
 
     const onPress = () => {
         setRecurring(true)
@@ -32,8 +57,20 @@ const CreateClass = () => {
             
             <div className="w-full flex flex-row justify-between items-start my-5 h-full">
 
-                <div style={{borderRadius: 20}} className="w-2/3 flex flex-row bg-gray-50 justify-between items-center h-full">
-
+                <div style={{borderRadius: 20}} className="w-2/3 flex flex-row bg-gray-50 justify-start p-5 items-start h-full">
+                    {/* <DateRangePicker
+                        onChange={item => setDate({ ...date, ...item })}
+                        months={1}
+                        minDate={addDays(new Date(), -300)}
+                        maxDate={addDays(new Date(), 900)}
+                        direction="vertical"
+                        scroll={{ enabled: true }}
+                        ranges={[date.selection, date.compare]}
+                    /> */}
+                    <DateRangePicker
+                        onChange={item => setSelectedDate({ ...selectedDate, ...item })}
+                        ranges={[selectedDate.selection]}
+                    />
                 </div>
                
                 <div style={{borderRadius: 20}} className="w-96 h-auto bg-gray-50 p-6 ml-16">
