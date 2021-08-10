@@ -16,13 +16,13 @@
         font-size: 15px;
 
         &:focus{
-            border-color: $primary;
+            border-color: $primaryFont;
         }
         &:focus + span{
             font-weight: 600;
             font-size: 12px;
             line-height: 16px;
-            color: $primary;
+            color: $primaryFont;
             top: -7px;
             background-color: white;
             padding: 0 5px;

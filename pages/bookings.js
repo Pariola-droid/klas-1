@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import Link from "next/link";
 import Head from 'next/head';
 
-import Input from "../components/inputComponent/input";
+// import Input from "../components/inputComponent/input";
 
 import styles from '.././styles/bookings/bookings.module.scss'
 
 
 class Bookings extends Component{
-    
-    
 
     render(){
         return(
@@ -55,8 +53,14 @@ class Bookings extends Component{
 
                     <div className={styles.form}>
                         <div className={styles.iFlex}>
-                            <Input type="text" name="user_name" placeholder="Your Name"/>
-                            <Input type="email" name="email_address" placeholder="Your Email"/>
+                        <label className={styles.inputContainer}>
+                            <input type="text" name="user_name" className={styles.inputField} />
+                            <span>Name</span>                        
+                        </label>
+                        <label className={styles.inputContainer}>
+                            <input type="email" name="paystack_email" className={styles.inputField} />
+                            <span>Email</span>                        
+                        </label>    
                         </div>                        
                         <button className={styles.button}>Proceed to Book</button>
                         <div className={styles.powered}>

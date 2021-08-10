@@ -16,7 +16,7 @@ class Login extends Component{
             <div>
 
                 <Head>
-                    <title>Klas - Bookings </title>
+                    <title>Klas</title>
                     <meta name="Klas" content="Klas" content="Remote teaching platform for creating engaging online classes anywhere, anytime. Share and monetize your knowledge." />
                     <link rel="icon" href="/klas.svg" />
                 </Head>
@@ -24,7 +24,7 @@ class Login extends Component{
                 <section className={styles.container}>
                      <div className={styles.narrativeSection}>
                     <div>
-                        <h2>Host, Manage and Monetize Your Online Classes</h2>
+                        <h2>Create, manage monetize cohort-based classes.</h2>
                     </div>
                 </div>
                 
