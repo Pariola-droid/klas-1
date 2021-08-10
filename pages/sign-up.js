@@ -58,7 +58,7 @@ class SignUp extends Component{
                         <div className={styles.formSwitch}>                            
                             <p>
                                 <span>Already have an account? </span>
-                                <Link href="/login" className={styles.link}>Sign In</Link>
+                                <Link href="/sign-in" className={styles.link}>Sign In</Link>
                             </p>
                         </div>
                     </div>

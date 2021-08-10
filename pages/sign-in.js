@@ -4,10 +4,10 @@ import Head from 'next/head';
 
 import Input from "../components/inputComponent/input";
 
-import styles from '.././styles/onboard/login.module.scss'
+import styles from '.././styles/onboard/sign_in.module.scss'
 
 
-class Login extends Component{
+class SignIn extends Component{
     
     
 
@@ -61,4 +61,4 @@ class Login extends Component{
     }
 }
 
-export default Login;
+export default SignIn;
