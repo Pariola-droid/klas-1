@@ -16,7 +16,7 @@ function App() {
       <View style={styles.container}>
         <Head>
           <title>Klas - Create, Share & Earn</title>
-          <meta name="Klas" content="Klas is your online content management, Share and moneytize your knowledge." />
+          <meta name="Klas" content="Remote teaching platform for creating engaging online classes anywhere, anytime. Share and monetize your knowledge." />
           <link rel="icon" href="/klas.svg" />
         </Head>
 

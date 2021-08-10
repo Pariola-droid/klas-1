@@ -1,0 +1,139 @@
+@import '../variables';
+.container{
+    display: flex;
+    min-height: 100vh;
+    padding: 10px;
+
+    .narrativeSection{
+        width: 45%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../../public/login-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        border-radius: 10px;
+
+        @media only screen and (max-width:890px) {
+            width: 40%;
+        }
+        @media only screen and (max-width:800px) {
+            display: none;
+        }
+
+        &>div{
+            text-align: center;
+            h2{
+                font-size: 36px;
+                line-height: initial;
+                color: white;
+
+                @media only screen and (max-width:890px) {
+                    font-size: 30px;
+                    line-height: 45px;
+                }
+            }
+            .appDownloadBtns{
+                img{
+                    margin: 0 7px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .formSection{
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+
+        @media only screen and (max-width:890px) {
+            width: 60%;
+        }
+        @media only screen and (max-width:800px) {
+            width: 100%;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../../public/login-bg.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        @media only screen and (max-width:500px) {
+            padding: 50px 10px;
+        }
+
+        &>div{
+            width: 60%;
+
+            @media only screen and (max-width:1100px) {
+                width: 80%;
+            } 
+            @media only screen and (max-width:890px) {
+                width: 90%;
+            }
+            @media only screen and (max-width:400px) {
+                width: 100%;
+            }
+            
+
+            .formHeader{
+                text-align: center;
+                margin-bottom: 1rem;
+
+                & img {
+                    margin: 0 auto;
+                }
+
+                p{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+            .formElements{
+                padding: 10px;
+
+                &>div:first-child{
+                    margin-bottom: 25px;
+                }
+                .forgotPassword{
+                    font-size: 14px;
+                    text-align: right;
+                    margin: 10px 0 25px;
+
+                    span{
+                        color: $primary;
+                    }
+                }
+
+                 & .button {
+                    margin-top: 2rem;
+                    font-size: 16px;
+                    line-height: 32px;
+                    height: 56px;
+                    width: 100%;
+                    background-color: $primary;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $primary;
+                    border-radius: 8px;
+                    padding: 0 15px;
+                    outline: none;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover,
+                    &:focus{
+                        box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+                    }
+                }
+            }
+            .formSwitch{
+                font-size: 14px;
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

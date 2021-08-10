@@ -99,7 +99,7 @@ class Dashboard extends Component{
 
                 <Head>
                     <title>Klas - Dashboard </title>
-                    <meta name="Klas" content="Klas is your online content management, Share and moneytize your knowledge." />
+                    <meta name="Klas" content="Klas" content="Remote teaching platform for creating engaging online classes anywhere, anytime. Share and monetize your knowledge." />
                     <link rel="icon" href="/klas.svg" />
                 </Head>
                             
