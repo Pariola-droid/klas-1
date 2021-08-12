@@ -7,7 +7,7 @@ import Integrations from "../components/Integrations";
 
 import zoom from "../public/zoom.png";
 import gmeet from "../public/gmeet.png";
-import gmail from "../public/gmail.png";
+// import gmail from "../public/gmail.png";
 import calendar from "../public/calendar.png";
 import stripe from "../public/stripe.png";
 import flutterwave from "../public/flutterwave.png";
@@ -33,7 +33,7 @@ const apis = [
     },
     {
         id: "gmail",
-        imageUri: gmail,
+        imageUri: "https://logos-world.net/wp-content/uploads/2020/11/Gmail-Emblem.png",
         title: "Gmail for Business",
         description: "Coming Soon",
     },
