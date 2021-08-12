@@ -20,7 +20,7 @@ const Payments = () => {
 
         <Head>
           <title>Klas - Payments </title>
-          <meta name="Klas" content="Klas is your online content management, Share and moneytize your knowledge." />
+          <meta name="Klas" content="Klas is your online content management, Share and monetize your knowledge." />
           <link rel="icon" href="/klas.svg" />
         </Head>
                             

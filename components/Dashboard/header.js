@@ -65,6 +65,10 @@ const Header = () => {
                     </div>
                 </div> 
             </div>  
+
+            { /*======= Modal Here ========*/ }
+            { /*======= Modal Here ========*/ }
+
         </div>
     );
 

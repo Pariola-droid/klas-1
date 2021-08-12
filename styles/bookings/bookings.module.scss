@@ -1,0 +1,215 @@
+@import '../variables';
+
+.container{
+    max-height: 1000px;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 0;
+    color: $primaryFont;
+    position: relative;
+    // background-color: aqua;
+
+    & .header {
+        max-width: 1000px;
+        // background-color: aqua;
+
+        & .kLogo {
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            // display: none;
+        }
+
+        & .title {
+            display: flex;
+            justify-content: normal;
+            align-items: center;
+            font-size: 3rem;
+            text-align: center;
+            max-width: 750px;
+            line-height: 1.25;
+            font-weight: 600;
+        }
+
+        & .tutor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 2rem;            
+
+            & img {
+                height: 40px;
+                width: 40px;
+                margin-right: 1rem;
+            }
+
+            & span {
+                font-weight: 500;
+                margin-left: .4rem;
+                text-transform: capitalize;
+            }
+
+        }
+
+        & .schedule {
+            text-transform: capitalize;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 2rem;   
+            font-weight: 500;
+
+            & span {
+                width: 30px;
+                height: 1px;
+                background-color: $primaryFont;
+                margin: 0 1rem;
+            }
+        }
+
+    }
+
+    & .details {
+        padding-top: 50px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+        text-align: center; 
+        margin-bottom: 2rem;
+
+        & .desc {
+            margin-bottom: 1rem;
+
+            & h3 {
+                font-weight: 500;
+                font-size: 1.1rem;
+                margin-bottom: .8rem;
+            }
+            p {
+                font-size: .94rem;
+                line-height: 1.5;
+                max-width: 550px;
+            }
+        }
+
+        & .req {
+           @extend .desc;
+        }
+    }
+
+    & .form {
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 362.172px;   
+
+        & .iFlex {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 140px;
+
+            .inputContainer{
+                position: relative;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                width: 362.172px;
+
+                .inputField{
+                    padding: 1rem 1.6rem;     
+                    border: 1px solid #CCCCCC;
+                    border-radius: 4px;
+                    outline: none;
+                    transition: .3s;
+                    font-size: 15px;
+                    width: 100%;
+
+                    &:focus{
+                        border-color: $primaryFont;
+                    }
+                    &:focus + span{
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $primaryFont;
+                        top: -7px;
+                        background-color: white;
+                        padding: 0 5px;
+                    }
+                }
+                
+                &>span{
+                    font-size: 12px;
+                    color: #8d909152;
+                    position: absolute;
+                    left: 25px;
+                    top: 20px;
+                    transition: .3s;
+                }                
+
+            }
+        }
+        
+
+        & .button {
+            margin-top: 2rem;
+            font-size: 16px;
+            line-height: 32px;
+            height: 56px;
+            width: 100%;
+            background-color: $primaryFont;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $primaryFont;
+            border-radius: 8px;
+            padding: 0 15px;
+            outline: none;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover,
+            &:focus{
+                box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+            }
+        }
+
+        & .powered {
+            font-size: .8rem;
+            font-weight: 600;
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+    
+}
+
+
+//   @media only screen and (max-width:1165px){
+//             width: 45%;
+//         }
+//         @media only screen and (max-width:870px){
+//             width: 55%;
+//         }
+//         @media only screen and (max-width:710px){
+//             width: 75%;
+//         }
+//         @media only screen and (max-width:530px){
+//             width: 90%;
+//         }
+//         @media only screen and (max-width:430px){
+//             width: 100%;
+//         }
