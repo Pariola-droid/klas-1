@@ -3,10 +3,55 @@ import Head from 'next/head';
 
 import Header from "../components/Dashboard/header";
 import Sidebar from "../components/Dashboard/sidebar";
+import Integrations from "../components/Integrations";
 
+import zoom from "../public/zoom.png";
+import gmeet from "../public/gmeet.png";
+import gmail from "../public/gmail.png";
+import calendar from "../public/calendar.png";
+import stripe from "../public/stripe.png";
+import flutterwave from "../public/flutterwave.png";
 
+const apis = [
+    {
+        id: "zoom",
+        imageUri: zoom,
+        title: "Zoom",
+        description: "Automatically include Zoom meeting details in your cohort bookings.",
+    },
+    {
+        id: "gmeet",
+        imageUri: gmeet,
+        title: "Google Meet",
+        description: "Automatically include Google meet details in your cohort bookings.",
+    },
+    {
+        id: "calender",
+        imageUri: calendar,
+        title: "Calender Connection",
+        description: "Connect your calendar to Klas and manage your calendar settings.",
+    },
+    {
+        id: "gmail",
+        imageUri: gmail,
+        title: "Gmail for Business",
+        description: "Coming Soon",
+    },
+    {
+        id: "stripe",
+        imageUri: stripe,
+        title: "Stripe",
+        description: "Coming Soon",
+    },
+    {
+        id: "flutterwave",
+        imageUri: flutterwave,
+        title: "Flutterwave",
+        description: "Coming Soon",
+    },
+]
 
-const Integrations = () => {
+const integrations = () => {
 
     const [recurring, setRecurring] = useState(false);
 
@@ -30,7 +75,14 @@ const Integrations = () => {
             
             <Header />
             
-            <div style={{borderRadius: 20}} className="w-full h-full flex flex-col justify-start items-start bg-gray-50 my-5 py-5 px-5">
+            <div style={{borderRadius: 20}} className="w-full h-full flex flex-col justify-start items-center bg-gray-50 my-5 py-5 px-5">
+                <div className="grid grid-cols-3">
+                    { apis.map(item => (
+
+                        <Integrations key={item.id} imageUri={item.imageUri} title={item.title} description={item.description}/>
+
+                    )) }
+                </div>
                 
                     
             </div>
@@ -39,4 +91,4 @@ const Integrations = () => {
     )
 }
 
-export default Integrations;
+export default integrations;
