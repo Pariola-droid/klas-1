@@ -28,7 +28,7 @@ const ClassWhite = (props) => {
                     borderBottomLeftRadius: 5,  
                     width: 5,
                     }}
-                className="bg-gray-200 h-44 ">
+                className="bg-gray-700 h-44 ">
                 
             </div>
             <div 
@@ -36,16 +36,16 @@ const ClassWhite = (props) => {
                     borderTopRightRadius: 5, 
                     borderBottomRightRadius: 5,
                     }}
-                className="bg-white w-32 h-44 flex flex-col justify-between py-5 pl-1">
+                className="bg-gray-500 w-32 h-44 flex flex-col justify-between py-5 pl-1">
                 
-                <p className="text-black text-xs font-sans rounded font-semibold wrap">{title}</p>
+                <p className="text-white text-xs font-sans rounded font-semibold wrap">{title}</p>
                 {/* <div>
                     <p className="text-gray-400 text-xs font-sans rounded ">Date created</p>
                     <p className="text-white text-xs font-sans rounded">{createdAt}</p>
                 </div> */}
                 <div>
-                    <p className="text-gray-700 text-xs font-sans rounded ">Total bookings</p>
-                    <p className="text-black text-xs font-sans rounded">{bookings}</p>
+                    <p className="text-gray-100 text-xs font-sans rounded ">Total bookings</p>
+                    <p className="text-white text-xs font-sans rounded">{bookings}</p>
                 </div>
             </div>
         </div>
