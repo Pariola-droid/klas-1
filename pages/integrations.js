@@ -29,7 +29,7 @@ const apis = [
         id: "calender",
         imageUri: calendar,
         title: "Calender Connection",
-        description: "Connect your calendar to Klas and manage your calendar settings.",
+        description: "Connect your calendar to Klas and manage your cohort schedule.",
     },
     {
         id: "gmail",
