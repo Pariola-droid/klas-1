@@ -21,7 +21,7 @@ const Classes = () => {
     <div className="h-screen w-screen flex flex-row">
 
         <Head>
-          <title>Klas - Class bookings </title>
+          <title>Klas - Cohort bookings </title>
           <meta name="Klas" content="Klas is your online content management, Share and moneytize your knowledge." />
           <link rel="icon" href="/klas.svg" />
         </Head>

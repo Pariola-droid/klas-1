@@ -17,7 +17,7 @@ const Classes = () => {
     <div className="h-screen w-screen flex flex-row">
 
         <Head>
-          <title>Klas - All classes </title>
+          <title>Klas - All cohorts </title>
           <meta name="Klas" content="Klas is your online content management, Share and moneytize your knowledge." />
           <link rel="icon" href="/klas.svg" />
         </Head>
@@ -31,7 +31,7 @@ const Classes = () => {
             <div style={{borderRadius: 20}} className="w-full flex flex-col justify-start items-center bg-gray-50 mt-5 h-full">
                
                 <div className="flex flex-row justify-start items-start py-3 w-full pl-8">
-                    <p className="font-sans rounded font-semibold text-start text-sm">All classes</p>
+                    <p className="font-sans rounded font-semibold text-start text-sm">All cohorts</p>
                 </div>
 
                 <div className="grid grid-cols-7">

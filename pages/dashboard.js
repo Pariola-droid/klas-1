@@ -118,7 +118,7 @@ class Dashboard extends Component{
                                     <p className="text-justify pr-3 text-gray-900 text-sm pt-2">{user?.summary} </p>
                                     
                                     <Link href="/create-class" >
-                                        <button className="w-28 mt-8 text-sm font-semibold h-10 rounded-md hover:cursor-pointer text-white bg-black text-center justify-center items-center">Create class</button>
+                                        <button className="w-28 mt-8 text-sm font-semibold h-10 rounded-md hover:cursor-pointer text-white bg-black text-center justify-center items-center">Create cohort</button>
                                     </Link>
                                 </div>
 
@@ -126,7 +126,7 @@ class Dashboard extends Component{
                             </div>
                             <div style={{height: 260, width: 700}}>
                                 <div className="flex flex-row justify-between items-center py-3">
-                                    <p className="font-sans rounded font-semibold">Your classes</p>
+                                    <p className="font-sans rounded font-semibold">Your cohorts</p>
                                     <Link href="/all-classes">
                                         <p className="hover:cursor-pointer font-sans rounded font-semibold text-gray-700">View all</p>
                                     </Link>
@@ -145,7 +145,7 @@ class Dashboard extends Component{
 
                         <div style={{borderRadius: 20}} className="w-full h-auto bg-gray-50 p-6 ml-16 mt-5">
                             <div className="mb-8 flex flex-col items-center">
-                                <Analysis icon={Tclass} title="Total classes" number="105" />
+                                <Analysis icon={Tclass} title="Total cohorts" number="105" />
                                 <Analysis icon={Tbook} title="Total bookings" number="1154" />
                                 <Analysis icon={Tearn} title="Total earnings" number="NGN 111,595,000" />
                                 <Analysis icon={Tavg} title="average weekly bookings" number="372" />
