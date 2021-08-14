@@ -75,7 +75,7 @@ const CreateClass = () => {
                
                 <div style={{borderRadius: 20}} className="w-96 h-auto bg-gray-50 p-6 ml-16">
                     <div className="mb-5">
-                        <h3 className="text-sm font-semibold font-sans rounded text-gray-900">Class details</h3>
+                        <h3 className="text-sm font-semibold font-sans rounded text-gray-900">Cohort details</h3>
                     </div>
 
                     <form className="flex flex-col">
@@ -83,21 +83,21 @@ const CreateClass = () => {
                             type="text" 
                             name="class_title" 
                             className="mb-5 text-xs text-gray-500 h-12 w-full focus:ring-gray-500 focus:border-gray-500 block sm:text-sm border-white shadow-sm rounded-lg bg-white" 
-                            placeholder="Class title" 
+                            placeholder="Cohort title" 
                         />
 
                         <input 
                             type="text" 
                             name="class_description" 
                             className="mb-5 text-xs text-gray-500 h-12 w-full focus:ring-gray-500 focus:border-gray-500 block sm:text-sm border-white shadow-sm rounded-lg bg-white" 
-                            placeholder="Class description" 
+                            placeholder="Cohort description" 
                             />
 
                         <textarea 
                             type="text" 
                             name="class_requirements" 
                             className="mb-5 text-xs text-gray-500 h-24 w-full focus:ring-gray-500 focus:border-gray-500 block sm:text-sm border-white shadow-sm rounded-lg bg-white" 
-                            placeholder="Class requirements">
+                            placeholder="Cohort requirements">
 
                         </textarea>
 
@@ -106,7 +106,7 @@ const CreateClass = () => {
                                 type="number" 
                                 name="class_cost" 
                                 className="mb-5 text-xs text-gray-500 h-12 w-full focus:ring-gray-500 focus:border-gray-500 block sm:text-sm border-white shadow-sm rounded-lg bg-white" 
-                                placeholder="Class cost" 
+                                placeholder="Cohort cost" 
                             />
 
                             <select className="ml-5 w-24 hover:cursor-pointer bg-white focus:ring-white focus:border-white border-white rounded-lg h-8 p-0 text-sm font-semibold px-2 m-0 text-black">
@@ -115,12 +115,12 @@ const CreateClass = () => {
                             </select>
                         </div>
 
-                        <div className="h-12 flex flex-row">
+                        {/*<div className="h-12 flex flex-row">
                             <span className="ml-3 text-sm font-semibold font-sans rounded">
                                 <input type="checkbox" className="mr-3 shadow-md border-gray-500 focus:ring-gray-500 focus:border-gray-500 rounded"/>
                                 Recurring classes.
                             </span>
-                        </div>
+                        </div>*/}
 
                         {recurring && <p>Recurring UI</p>}
 
